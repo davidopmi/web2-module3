@@ -1,0 +1,61 @@
+1: pwd
+tells you your current location 
+2: ls 
+list out the files and folders at current location 
+- rw- r-- r--
+- : this is a file 
+rw- : for the current user: it has the read right, the write right, but not execute right
+r-- : the group this user belong, has read right, no write right, no execute right 
+r-- : for other user  has read right, no write right, no execute right 
+
+3: create a directory(folder)
+mkdir test 
+
+4: enter a folder 
+cd test 
+
+5: go to one level up
+cd .. 
+
+6: delete a file(folder) 
+rm -rf test
+r : recursive 
+f : force 
+
+7: create a file 
+touch hello.txt
+
+8: edit/view a file 
+vim hello.txt
+to make the changes, you need to first enter the insert mode : i
+once you finish editing, to save or discard the changes, you need to press
+esc 
+to save the changes:  press :wq
+to discard the changes: press :q!
+
+9: to move a file from test1 folder to test2 folder 
+mv hello.txt ../test2 
+
+10: how to go back?  
+cd -   
+
+11: to rename a file or folder  is the same as move 
+if I want to rename hello.txt to hello2.txt 
+mv hello.txt hello2.txt 
+
+12: how to copy a file(folder)?
+copy a file: cp notes.txt notes2.txt
+copy a folder: cp -rf test1 test2 
+
+exercise:
+1:create a file
+2: open, edit and save this file 
+3: rename this file to something else 
+4: move this file to test2 folder 
+5: remove this file 
+6: remove this folder 
+
+
+
+
+

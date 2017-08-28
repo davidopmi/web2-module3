@@ -1,0 +1,15 @@
+<% include  ./partials/header.ejs %>
+    <p>the books are...</p>
+    <!--display the bookName, bookTitel-->
+     <% for (var i = 0; i < books.length; i++) { %>
+          <p> the bookname: <%= books[i].bookName %> 
+              the author is:  <%= books[i].author %>    
+          </p>  
+     <% } %> 
+
+     <p>the books are...</p>
+     <%   books.forEach(function(book ){  %>
+          <p> <%= book.bookName %>, <%= book.author %> </p>
+     <%    }); %> 
+
+<% include ./partials/footer.ejs %>

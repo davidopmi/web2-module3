@@ -1,0 +1,11 @@
+<% include  ./partials/header.ejs %>
+    <p>your input is: <%= name %>  </p>
+    
+     <%   if (name=="panda") { %>
+           <p> cute panda</p>
+     <%  } else if (name=="dog") { %>
+            <p> dog bark </p>
+     <%  } else if (name == "snake") {  %>
+            <p> scary snake</p>
+     <%  } %>
+<% include ./partials/footer.ejs %>
